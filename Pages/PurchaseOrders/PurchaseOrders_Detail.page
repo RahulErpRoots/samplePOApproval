@@ -1,0 +1,142 @@
+{
+	"Caption": "PurchaseOrders Details",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Description": "{OrderedById}",
+						"Footnote": "{ChangedAt}",
+						"HeadlineText": "{POId}",
+						"StatusText": "{SupplierId}",
+						"Subhead": "{OrderedByName}",
+						"SubstatusText": "{SupplierName}",
+						"Tags": [
+						]
+					},
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "POId",
+							"Value": "{POId}"
+						},
+						{
+							"KeyName": "OrderedById",
+							"Value": "{OrderedById}"
+						},
+						{
+							"KeyName": "OrderedByName",
+							"Value": "{OrderedByName}"
+						},
+						{
+							"KeyName": "ChangedAt",
+							"Value": "{ChangedAt}"
+						},
+						{
+							"KeyName": "SupplierId",
+							"Value": "{SupplierId}"
+						},
+						{
+							"KeyName": "SupplierName",
+							"Value": "{SupplierName}"
+						},
+						{
+							"KeyName": "DeliveryAddress",
+							"Value": "{DeliveryAddress}"
+						},
+						{
+							"KeyName": "DeliveryDateEarliest",
+							"Value": "{DeliveryDateEarliest}"
+						},
+						{
+							"KeyName": "LaterDelivDateExist",
+							"Value": "{LaterDelivDateExist}"
+						},
+						{
+							"KeyName": "GrossAmount",
+							"Value": "{GrossAmount}"
+						},
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}"
+						},
+						{
+							"KeyName": "ItemCount",
+							"Value": "{ItemCount}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Controls": [
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"Caption": "PO Items",
+						"UseTopPadding": true
+					},
+					"Visible": true,
+					"_Name": "SectionFormCell0",
+					"_Type": "Section.Type.FormCell"
+				},
+				{
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"HighlightSelectedItem": false,
+					"ObjectCell": {
+						"AccessoryType": "none",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Description": "{DeliveryDate}",
+						"DetailImageIsCircular": false,
+						"Footnote": "{Price}",
+						"PreserveIconStackSpacing": false,
+						"Selected": false,
+						"StatusText": "{Quantity}",
+						"Subhead": "{Product}",
+						"SubstatusText": "{QuantityUnit}",
+						"Title": "{POItemPos}"
+					},
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					},
+					"Target": {
+						"EntitySet": "{{#Property:@odata.readLink}}/PurchaseOrderItems",
+						"QueryOptions": "$orderby=POItemPos",
+						"Service": "/poApproval/Services/es5_approvepo.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "PurchaseOrders_Detail",
+	"_Type": "Page"
+}

@@ -1,0 +1,21 @@
+{
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"ActivityIndicatorText": "Downloading...",
+	"DefiningRequests": [
+		{
+			"Name": "PurchaseOrders",
+			"Query": "PurchaseOrders"
+		},
+		{
+			"Name": "PurchaseOrderItems",
+			"Query": "PurchaseOrderItems"
+		}
+	],
+	"OnFailure": "/poApproval/Actions/Service/InitializeOfflineFailureMessage.action",
+	"OnSuccess": "/poApproval/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"Service": "/poApproval/Services/es5_approvepo.service",
+	"ShowActivityIndicator": true,
+	"_Type": "Action.Type.ODataService.Initialize"
+}

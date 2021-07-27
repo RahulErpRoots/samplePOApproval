@@ -1,0 +1,36 @@
+{
+	"Credential": "cf",
+	"CF": {
+		"Target": "https://api.cf.eu10.hana.ondemand.com",
+		"Organization": "6b21fcd3-96ca-404b-afc8-53d463d5824b",
+		"Space": "feb2587a-2fc2-431e-9b97-351223103d55",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"AutoUrl": true,
+				"Version": "",
+				"StaticUrl": ""
+			},
+			"Destination": [
+				{
+					"CF": "",
+					"MDK": "es5_approvepo",
+					"URL": ""
+				}
+			]
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/6b21fcd3-96ca-404b-afc8-53d463d5824b/space/feb2587a-2fc2-431e-9b97-351223103d55",
+		"AppId": "com.erproots.po",
+		"Destination": [
+			"es5_approvepo"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=com.erproots.po&ClientId=3b3206c6-e763-453b-ab47-6721db463f96&ServerUrl=https://76687398trial-dev-com-erproots-po.cfapps.eu10.hana.ondemand.com&SapCloudPlatformEndpoint=https://76687398trial-dev-com-erproots-po.cfapps.eu10.hana.ondemand.com&AuthorizationEndpointUrl=https://76687398trial-dev-com-erproots-po.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://76687398trial-dev-com-erproots-po.cfapps.eu10.hana.ondemand.com&TokenUrl=https://76687398trial-dev-com-erproots-po.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token"
+	}
+}

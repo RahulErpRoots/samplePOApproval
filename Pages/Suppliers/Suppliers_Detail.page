@@ -1,0 +1,82 @@
+{
+	"Caption": "Suppliers Details",
+
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{Id}",
+				"Subhead": "{Phone}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{Email}",
+				"Description": "{Name}",
+				"StatusText": "{Web}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{FormattedAddress}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "Id",
+		"Value": "{Id}"
+	},
+	{
+		"KeyName": "Name",
+		"Value": "{Name}"
+	},
+	{
+		"KeyName": "Phone",
+		"Value": "{Phone}"
+	},
+	{
+		"KeyName": "Email",
+		"Value": "{Email}"
+	},
+	{
+		"KeyName": "Web",
+		"Value": "{Web}"
+	},
+	{
+		"KeyName": "FormattedAddress",
+		"Value": "{FormattedAddress}"
+	},
+	{
+		"KeyName": "FormattedContactName",
+		"Value": "{FormattedContactName}"
+	},
+	{
+		"KeyName": "ContactPhone",
+		"Value": "{ContactPhone}"
+	},
+	{
+		"KeyName": "ContactFax",
+		"Value": "{ContactFax}"
+	},
+	{
+		"KeyName": "ContactEmail",
+		"Value": "{ContactEmail}"
+	},
+	{
+		"KeyName": "ChangedAt",
+		"Value": "{ChangedAt}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Suppliers_Detail"
+}

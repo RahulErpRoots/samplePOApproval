@@ -1,0 +1,46 @@
+{
+	"Caption": "PurchaseOrderItems",
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{POItemPos}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/poApproval/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action",
+				"StatusImage": "",
+				"Title": "{POId}",
+				"Footnote": "{Price}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{PriceCurrency}",
+				"Subhead": "{Product}",
+				"SubstatusText": "{GrossAmount}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "PurchaseOrderItems",
+				"Service": "/poApproval/Services/es5_approvepo.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "PurchaseOrderItems_List"
+}

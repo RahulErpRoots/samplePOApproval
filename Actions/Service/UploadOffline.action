@@ -1,0 +1,9 @@
+{
+	"Service": "/poApproval/Services/es5_approvepo.service",
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/poApproval/Actions/Service/DownloadStartedMessage.action",
+	"OnFailure": "/poApproval/Actions/Service/SyncFailureMessage.action"
+}

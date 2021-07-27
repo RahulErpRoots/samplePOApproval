@@ -1,0 +1,78 @@
+{
+	"Caption": "PurchaseOrderItems Details",
+
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{POId}",
+				"Subhead": "{Product}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{Price}",
+				"Description": "{POItemPos}",
+				"StatusText": "{PriceCurrency}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{GrossAmount}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "POId",
+		"Value": "{POId}"
+	},
+	{
+		"KeyName": "POItemPos",
+		"Value": "{POItemPos}"
+	},
+	{
+		"KeyName": "Product",
+		"Value": "{Product}"
+	},
+	{
+		"KeyName": "Price",
+		"Value": "{Price}"
+	},
+	{
+		"KeyName": "PriceCurrency",
+		"Value": "{PriceCurrency}"
+	},
+	{
+		"KeyName": "GrossAmount",
+		"Value": "{GrossAmount}"
+	},
+	{
+		"KeyName": "GrossAmountCurrency",
+		"Value": "{GrossAmountCurrency}"
+	},
+	{
+		"KeyName": "Quantity",
+		"Value": "{Quantity}"
+	},
+	{
+		"KeyName": "QuantityUnit",
+		"Value": "{QuantityUnit}"
+	},
+	{
+		"KeyName": "DeliveryDate",
+		"Value": "{DeliveryDate}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "PurchaseOrderItems_Detail"
+}

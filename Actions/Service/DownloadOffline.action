@@ -1,0 +1,22 @@
+{
+	"Service": "/poApproval/Services/es5_approvepo.service",
+	"DefiningRequests": [
+	{
+		"Name": "PurchaseOrders",
+		"Query": "PurchaseOrders"
+	},
+	{
+		"Name": "PurchaseOrderItems",
+		"Query": "PurchaseOrderItems"
+	},
+	{
+		"Name": "Suppliers",
+		"Query": "Suppliers"
+	}
+],
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnFailure": "/poApproval/Actions/Service/SyncFailureMessage.action"
+}

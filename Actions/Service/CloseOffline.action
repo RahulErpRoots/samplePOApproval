@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Close",
+	"Service": "/poApproval/Services/es5_approvepo.service",
+	"Force": true,
+	"ActionResult": {
+		"_Name": "close"
+	},
+	"OnSuccess": "/poApproval/Actions/Service/CloseOfflineSuccessMessage.action",
+	"OnFailure": "/poApproval/Actions/Service/CloseOfflineFailureMessage.action"
+}

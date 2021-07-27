@@ -1,0 +1,72 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"Icon": "sap-icon://synchronize",
+				"IsIconCircular": false,
+				"OnPress": "/poApproval/Actions/Service/SyncStartedMessage.action",
+				"Position": "right",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"Icon": "sap-icon://log",
+				"IsIconCircular": false,
+				"OnPress": "/poApproval/Actions/Logout.action",
+				"Position": "right",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "PurchaseOrders",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"UseTopPadding": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Description": "{OrderedById}",
+						"DetailImageIsCircular": false,
+						"Footnote": "{ChangedAt}",
+						"OnPress": "/poApproval/Actions/PurchaseOrders/NavToPurchaseOrders_Detail.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{SupplierId}",
+						"Subhead": "{OrderedByName}",
+						"SubstatusText": "{SupplierName}",
+						"Title": "{POId}"
+					},
+					"Search": {
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"Enabled": true,
+						"MinimumCharacterThreshold": 3,
+						"Placeholder": "Item Search"
+					},
+					"Target": {
+						"EntitySet": "PurchaseOrders",
+						"QueryOptions": "",
+						"Service": "/poApproval/Services/es5_approvepo.service"
+					},
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "PurchaseOrders_List",
+	"_Type": "Page"
+}
